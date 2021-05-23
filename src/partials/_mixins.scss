@@ -1,0 +1,69 @@
+@mixin list_horizontal {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin list_reset {
+  margin-left: 0;
+  list-style: none;
+  text-decoration: none;
+  @include list_horizontal;
+}
+
+@mixin default_btn {
+  color: $colorfont;
+  text-decoration: none;
+  transition: color $transition_duration;
+
+  &:hover {
+    color: $bgbtngoogle;
+    background-color: $colorbtngoogle;
+  }
+}
+@mixin btngooglenav {
+  color: $colorbtngoogle;
+  text-decoration: none;
+  transition: color $transition_duration;
+  border: solid 1px $colorbtngoogle;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $bgbtngoogle;
+    background-color: $colorbtngoogle;
+  }
+}
+@mixin btngoogle {
+  color: $colorbtngoogle;
+  text-decoration: none;
+  transition: color $transition_duration;
+  border: solid 1px $colorbtngoogle;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $bgbtngoogle;
+    background-color: $colorbtngoogle;
+  }
+}
+@mixin btnslack {
+  color: $colorbtngoogle;
+  text-decoration: none;
+  transition: color $transition_duration;
+  border: solid 1px $colorbtngoogle;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $bgbtngoogle;
+    background-color: $colorbtngoogle;
+  }
+}
+
+@mixin padding_page {
+  padding: 0 150px;
+}

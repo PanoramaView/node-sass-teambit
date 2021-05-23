@@ -1,0 +1,44 @@
+
+header{
+  margin-bottom: 50px;
+  .flex{
+    display: flex;
+    border-bottom: solid 1px black;
+  }
+  .nav_logo{
+    flex: 1;
+    .logobox {
+      img {
+        max-width: 90px;
+        margin: 15px 10px;
+      }
+    }
+  }
+  .nav_links{
+    float: right;
+    display: flex;
+    padding-top: 5px;
+    ul {
+      @include list_reset;
+      li {
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        a {
+          padding: 8px 10px;
+          font-weight: $fontbold;
+          font-size: 12;
+          &.btngoogle{
+            @include btngooglenav;
+            .googlelogo_box{
+              width: 20px;
+              height: 20px;
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

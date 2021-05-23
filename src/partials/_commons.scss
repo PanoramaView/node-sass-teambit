@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font_family;
+  font-size: $font_size;
+  color: $colorfont;
+}
+
+
+//buttons
+a,
+button {
+  @include default_btn;
+}
+
+.padding_page {
+  @include padding_page;
+  
+}
+
+h1{
+  font-weight: $fontboldh1;
+  font-size: 37;
+}
