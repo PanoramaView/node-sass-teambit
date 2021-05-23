@@ -12,9 +12,11 @@
 }
 
 @mixin default_btn {
-  color: $colorfont;
   text-decoration: none;
   transition: color $transition_duration;
+}
+@mixin nav_btn {
+  color: $colorfont;
 
   &:hover {
     color: $bgbtngoogle;
@@ -74,6 +76,14 @@
       font-size: $fontsmall;
       margin: 0 4px;
     }
+  }
+}
+
+@mixin learnmore{
+  color: $colorfontblue;
+  margin: 30px 0;
+  &:hover{
+    opacity: 0.7;
   }
 }
 

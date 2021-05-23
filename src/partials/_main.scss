@@ -25,14 +25,93 @@
 
 main{
     .yellow{
-        .flex{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .up{
-                .flex{
+        padding-top: 50px;
+        .yellow_section{
+            .flex{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h2{
+                    padding: 0 250px;
+                }
+                .up{
+                    .flex2{
+                        display: flex;
+                        align-items: center;
+                        .img-box{
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 50px;
+                            img{
+                                height: 100px;
+                                width: 100%;
+                                object-fit: contain;
+                                margin-bottom: 30px;
+                            }
+                            div{
+                                font-size: $fontsmall;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .down{
+                    text-align: center;
+                    .img-box{
+                        height: 250px;
+                        margin-bottom: 100px;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        margin: 100px 0;
+        &#hrblack{
+            color: black;
+            height: 0.1px;
+            opacity: .8;
+        }
+    }
+}
+
+.white{
+    margin: 50px 0;
+    .flex{
+        display: flex;
+        .feedback_section{
+            .flex{
+                display: flex;
+                .bigimg{
+                    .img-box{
+                        img{
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .imgwithtitle{
+                    flex-direction: column;
                     display: flex;
-                    align-items: center;
+                    width: 50%;
+                    h2{
+                        text-align: start;
+                    }
+                    .img-box{
+                        img{
+                            width: 100%;
+                            object-fit: contain;
+                            
+                        }
+                    }
+                    .learnmore{
+                        @include learnmore;
+                    }
                 }
             }
         }

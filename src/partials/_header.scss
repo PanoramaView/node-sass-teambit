@@ -26,6 +26,7 @@ header{
         justify-content: center;
         align-items: center;
         a {
+          @include nav_btn;
           padding: 8px 10px;
           font-weight: $fontbold;
           font-size: 12;
