@@ -87,10 +87,35 @@
   }
 }
 
-@mixin margin_page {
-  margin: 0 150px;
-  @media screen and (min-width: 1500px) {
-    margin: auto;
-    max-width: 1200px;
-  }
+
+@mixin wpresentation {
+  .flex2{
+    display: flex;
+    .bigimg{
+        .img-box{
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .imgwithtitle{
+        flex-direction: column;
+        display: flex;
+        h2{
+            text-align: start;
+        }
+        .img-box{
+            img{
+                width: 100%;
+                object-fit: contain;
+                
+            }
+        }
+        .learnmore{
+            @include learnmore;
+        }
+    }
+}
+  
 }

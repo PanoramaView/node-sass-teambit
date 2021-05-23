@@ -18,10 +18,18 @@ button {
 }
 
 .margin_page{
-  @include margin_page;
+  margin: 0 150px;
+  @media screen and (min-width: 1500px) {
+    margin: auto;
+    max-width: 1200px;
+  }
 }
-
-
+body{
+  @media screen and (min-width: 1500px) {
+    margin: auto;
+    max-width: 1500px;
+  }
+}
 h1{
   font-weight: $fontboldh1;
   font-size: 37;

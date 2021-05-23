@@ -71,7 +71,7 @@ main{
         }
     }
     hr{
-        margin: 100px 0;
+        margin-bottom: 100px;
         &#hrblack{
             color: black;
             height: 0.1px;
@@ -84,36 +84,12 @@ main{
     margin: 50px 0;
     .flex{
         display: flex;
-        .feedback_section{
-            .flex{
-                display: flex;
-                .bigimg{
-                    .img-box{
-                        img{
-                            width: 100%;
-                            object-fit: contain;
-                        }
-                    }
-                }
-                .imgwithtitle{
-                    flex-direction: column;
-                    display: flex;
-                    width: 50%;
-                    h2{
-                        text-align: start;
-                    }
-                    .img-box{
-                        img{
-                            width: 100%;
-                            object-fit: contain;
-                            
-                        }
-                    }
-                    .learnmore{
-                        @include learnmore;
-                    }
-                }
-            }
+        flex-direction: column;
+        .sect{
+            margin-bottom: 50px;
+        }
+        .sect{
+            @include wpresentation;
         }
     }
 }
