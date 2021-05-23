@@ -5,7 +5,7 @@
 }
 
 @mixin list_reset {
-  margin-left: 0;
+  margin: 0;
   list-style: none;
   text-decoration: none;
   @include list_horizontal;
@@ -29,41 +29,58 @@
   border-radius: 5px;
   display: flex;
   align-items: center;
-
-  &:hover {
-    color: $bgbtngoogle;
-    background-color: $colorbtngoogle;
+  .googlelogo_box{
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
   }
-}
-@mixin btngoogle {
-  color: $colorbtngoogle;
-  text-decoration: none;
-  transition: color $transition_duration;
-  border: solid 1px $colorbtngoogle;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    color: $bgbtngoogle;
-    background-color: $colorbtngoogle;
-  }
-}
-@mixin btnslack {
-  color: $colorbtngoogle;
-  text-decoration: none;
-  transition: color $transition_duration;
-  border: solid 1px $colorbtngoogle;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-
   &:hover {
     color: $bgbtngoogle;
     background-color: $colorbtngoogle;
   }
 }
 
-@mixin padding_page {
-  padding: 0 150px;
+@mixin signup_btnlogo {
+  font-size: $fontsmall;
+  .buttons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    a{
+      padding: 5px 10px;
+      font-weight: $fontbold;
+      &.btnlogo{
+        color: $bgwhite;
+        background-color: $colorbtngoogle;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color $transition_duration;
+        border: solid 1px $colorbtngoogle;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        .googlelogo_box{
+          width: 15px;
+          height: 15px;
+          margin-right: 3px;
+        }
+        &:hover {
+          color: $colorbtngoogle;
+          background-color: $bgbtngoogle;
+        }
+      }
+    }
+    span{
+      font-size: $fontsmall;
+      margin: 0 4px;
+    }
+  }
+}
+
+@mixin margin_page {
+  margin: 0 150px;
+  @media screen and (min-width: 1500px) {
+    margin: auto;
+    max-width: 1200px;
+  }
 }

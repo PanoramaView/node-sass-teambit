@@ -1,6 +1,6 @@
 
 header{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   .flex{
     display: flex;
     border-bottom: solid 1px black;
@@ -31,11 +31,6 @@ header{
           font-size: 12;
           &.btngoogle{
             @include btngooglenav;
-            .googlelogo_box{
-              width: 20px;
-              height: 20px;
-              margin-right: 3px;
-            }
           }
         }
       }

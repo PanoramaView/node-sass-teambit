@@ -17,12 +17,12 @@ button {
   @include default_btn;
 }
 
-.padding_page {
-  @include padding_page;
-  
+.margin_page{
+  @include margin_page;
 }
 
 h1{
   font-weight: $fontboldh1;
   font-size: 37;
+  line-height: 1.6;
 }
