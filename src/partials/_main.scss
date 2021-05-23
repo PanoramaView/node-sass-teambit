@@ -19,13 +19,8 @@
     }
 }
 
-.yellow{
-    background-color: $bgyellow;
-}
-
 main{
     .yellow{
-        padding-top: 50px;
         .yellow_section{
             .flex{
                 display: flex;
@@ -90,6 +85,58 @@ main{
         }
         .sect{
             @include wpresentation;
+        }
+    }
+}
+.yellow{
+    .getstarted_section{
+        .flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                .img-box{
+                    position: relative;
+                    img{
+                        position: absolute;
+                        top:0;
+                        left: 10px;
+                    }
+                    
+                }
+            }
+            .txtmsg_box{
+                width: 700px;
+                border: 1px solid $colorfontblue;
+                border-radius: 10px;
+                background-color: white;
+                padding:20px;
+                font-size: $fontsmall;
+                .txtmsg2{
+                    .flex{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        .img-box{
+                            height: 50px;
+                            img{
+                                height: 100%;
+                                width: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                        .names{
+                            color: $colorfontblue;
+                        }
+                        
+                    }
+                }
+            }
+            .signup_btnlogo{
+                @include signup_btnlogo;
+                margin: 50px 0;
+            }
         }
     }
 }
